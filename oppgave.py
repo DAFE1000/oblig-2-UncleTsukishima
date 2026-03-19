@@ -18,11 +18,13 @@ for i in range(1000):
         a = m 
 
 x = (a + b) / 2
+y = f(x)
 
 X = np.linspace(0, 5, 400)
 Y = f(X)
 
-print(x)
+print(f"Toppunkt: {x:.4f}")
+print(f"f(x) = {y:.4f}")
 plt.plot(X, Y, label="f(x)") # plotter funksjonen
 plt.scatter([x], [f(x)], color="blue", label="Maksimalpunkt") # markerer toppunktet.
 plt.title("f(x) = e^(-x/4) * arctan(x)")
